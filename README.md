@@ -59,7 +59,7 @@ kubectl delete -k <directory-name>
 (It deletes the manifest files and creates deployments, services, and other resources that were created)
 
 ---
-Considering for Prod:
+# Considering for Prod:
 
 ```
 kustomize build overlays/prod
