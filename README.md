@@ -67,4 +67,6 @@ kustomize build overlays/prod
 kubectl apply -k overlays/prod
 ```
 ![image](https://github.com/Pavan-1997/K8s_Kustomize/assets/32020205/44e509d2-e31a-46d7-a398-55e649b24366)
- 
+
+![image](https://github.com/Pavan-1997/K8s_Kustomize/assets/32020205/2b178eab-a699-49a7-9bf8-19aaa18e5737)
+(Accessing the application on the node)
