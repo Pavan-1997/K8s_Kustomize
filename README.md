@@ -57,5 +57,10 @@ It deletes the manifest files and creates deployments, services, and other resou
 ---
 Considering for Prod:
 
-kustomize build overlays/
+```
+kustomize build overlays/prod
+```
+![image](https://github.com/Pavan-1997/K8s_Kustomize/assets/32020205/1e083d93-624b-490a-89f8-0ad36315d4f3)
+
+
 
