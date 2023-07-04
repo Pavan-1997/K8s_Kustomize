@@ -39,6 +39,10 @@ sudo apt install tree
 ```
 To view directories
 
+![image](https://github.com/Pavan-1997/K8s_Kustomize/assets/32020205/35e95d01-cad9-4f0b-a28a-ef1487870f58)
+
+(This is  how the structure looks like when using Tree in  Kustomize)
+
 ```
 kustomize build <directory-name>
 ```
