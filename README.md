@@ -16,47 +16,46 @@ All customization specifications are contained within a kustomization.yaml file.
 
 ---
 
-Installing Kustomize 
+# Installing and Applying Kustomize:
 
+Downloading the package 
 ```
 wget https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv5.1.0/kustomize_v5.1.0_linux_amd64.tar.gz 	
 ```
-Downloading the package 
+Extracting the package
 ```
 tar zxf kustomize_v5.1.0_linux_amd64.tar.gz 	
 ```
-Extracting the package
+Moving the kustomize to the bin directory 
 ```
 sudo mv kustomize /usr/local/bin
 ```
-Moving the kustomize to the bin directory 
+To check the version of kustomize 
 ```
 kustomize version 
 ```
-To check the version of kustomize 
+To view directories
 ```
 sudo apt install tree
 ```
-To view directories
-
+This is  how the structure looks like when using Tree in  Kustomize
 ![image](https://github.com/Pavan-1997/K8s_Kustomize/assets/32020205/35e95d01-cad9-4f0b-a28a-ef1487870f58)
 
-(This is  how the structure looks like when using Tree in  Kustomize)
 
 ```
 kustomize build <directory-name>
 ```
-It generates manifests by processing the specified directory that contains a kustomization file and other resource files
+(It generates manifests by processing the specified directory that contains a kustomization file and other resource files)
 
 ```
 kubectl apply -k <directory-name>
 ```
-It applies the manifest files and creates deployments, services, and other resources 
+(It applies the manifest files and creates deployments, services, and other resources)
 
 ```
 kubectl delete -k <directory-name>
 ```
-It deletes the manifest files and creates deployments, services, and other resources that were created 
+(It deletes the manifest files and creates deployments, services, and other resources that were created)
 
 ---
 Considering for Prod:
