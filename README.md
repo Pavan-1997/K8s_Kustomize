@@ -63,4 +63,8 @@ kustomize build overlays/prod
 ![image](https://github.com/Pavan-1997/K8s_Kustomize/assets/32020205/1e083d93-624b-490a-89f8-0ad36315d4f3)
 
 
-
+```
+kubectl apply -k overlays/prod
+```
+![image](https://github.com/Pavan-1997/K8s_Kustomize/assets/32020205/44e509d2-e31a-46d7-a398-55e649b24366)
+ 
