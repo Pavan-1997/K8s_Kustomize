@@ -1,13 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-metadata:
-  name: prod-overlay
-
-namespace: prod
 
 resources:
-- ../../base/environments/prod
-- ../../base/apps/ingress
+- ../../base
 
-patchesStrategicMerge:
-- prod.yaml
+patches:
+- path: deployment-prod.yaml
+- path: service-prod.yaml

@@ -1,7 +1,0 @@
-# Create namespaces in kubernetes
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: sit
-  labels:
-    name: sit-environment
